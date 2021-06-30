@@ -5,7 +5,7 @@ Barre de Navigation alimentée par un tableau d'objets pour VueJs
 ## dependancies
 
 la barre utilise plusieurs dépendances : 
-_
+```
 "@fortawesome/fontawesome-free": "^5.15.3",
 "@fortawesome/fontawesome-svg-core": "^1.2.35",
 "@fortawesome/free-solid-svg-icons": "^5.15.3",
@@ -14,7 +14,7 @@ _
 "bootstrap-vue": "^2.17.3",
 "bootstrap": "^5.0.0-beta2",
 "vue-property-decorator": "^9.1.2"
- _
+```
 
 - Les balises des icones attendent des icones du site font-awesome.
 - L'implémentation des icones devra se faire suivant l'usage recommandé par la doc de fortawesome : 
