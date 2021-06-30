@@ -1,6 +1,6 @@
 # Barre de navigation
 
-barre de Navigation alimentée par un tableau pour VueJs
+Barre de Navigation alimentée par un tableau d'objets pour VueJs
 
 ## dependancies
 
@@ -16,24 +16,45 @@ _
 "vue-property-decorator": "^9.1.2"
  _
 
+- Les balises des icones attendent des icones du site font-awesome.
+- L'implémentation des icones devra se faire suivant l'usage recommandé par la doc de fortawesome : 
+[https://www.npmjs.com/package/@fortawesome/vue-fontawesome#recommended]
+
+
 ## Mise en route
 
-La barre est alimentée par un tableau dont le point d'entré est :
-```javascript
+La barre est à alimenter par un tableau dont le point d'entrée est
+```typescript
 /* ligne 143 */
-navElements
+navElements: Menu[]
 ```
 
-navElements attend un tableau d'objects, chaque object doit suivre le protocole d'interface Menu/SousMenu du fichier interfaceMenu.ts. Le fichier est commenté afin de facilité la comprehension.
+navElements attend un tableau d'objects, chaque objet doit suivre le protocole d'interface Menu/SousMenu du fichier interfaceMenu.ts. Le fichier est commenté afin de faciliter la compréhension.
 
 ## Utilisation
 
 ### Usage Normal
-le menu fermé laisse apparaitre les icones, s'ouvre au mouseEnter puis se fermer, soit au clic d'un lien, soit au mouseLeave
+Le menu fermé laisse apparaître les icônes, s'ouvre au mouseEnter puis se fermer, soit au clic d'un lien, soit au mouseLeave
 
 ### Usage TouchScreen
-Quel que soit la taille d'écran, si la personne est sur un appareil de type touchScreen, seul un menu hamburger est visible, le touché fait apparaitre le menu.
-Celui-ci se ferme au touché à l'exterieur (representé par un filtre) ou au touché d'un lien.
+Quelle que soit la taille d'écran, si la personne est sur un appareil de type touchScreen, seul un menu hamburger est visible, le touché fait apparaître le menu.
+Celui-ci se ferme au toucher à l'extérieur (représenté par un filtre) ou au touché d'un lien.
+
+### Premier/ Derniers éléments
+Le premier élément doit avoir la condition 'topElement: true' de l'interface Menu.
+Il est possible d'afficher plusieurs élements en pied de menu, pour celà il faut mettre la condition 'bottomElement: true' au premier élement devant être en bas du menu.
+
+## Personalisation
+
+Toutes les personnalisations sont trouvables dans les premiéres lignes du style.scss, les variables sont commentées.
+L'exception étant les icones toggle button en usage TouchScreen, pour les personnaliser, les variable se trouvent dans SideBarLeft.vue : 
+
+```javascript
+toggleBtnOpenIt = 'align-justify'; // icone de la version fermée
+toggleBtnCloseBtn = 'times'; // icone de la version ouverte
+```
+
+
 
 
 

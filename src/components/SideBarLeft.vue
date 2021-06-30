@@ -145,17 +145,17 @@ export default class SideBarLeft extends Vue {
     bar
   ]
 
+  /* gestion de l'icone du toggle btn */
+  toggleBtnOpenIt = 'align-justify';
+  toggleBtnCloseBtn = 'times';
+  buttonIcon = this.toggleBtnOpenIt;
+
   /* état de la barre
     navStyle change la classe 'is-close'/'is-open'
   */
 
   toggled = true;
   navStyle = 'is-close'; // change la classe du menu (is-close / is-open)
-
-  /* gestion de l'icone du toggle btn */
-  toggleBtnOpenIt = 'align-justify';
-  toggleBtnCloseBtn = 'times';
-  buttonIcon = this.toggleBtnOpenIt;
 
   /** controle toggled et change la classe du menu pour fermer la barre */
   closeNavbar (): void {
