@@ -26,7 +26,7 @@
           <div v-if="menu.childElement">
               <div
                 :id="'heading' + menu.id"
-                class="pt-3 pb-3 collapsed d-flex align-items-center "
+                class="pt-3 pb-3 collapsed d-flex align-items-center myA"
                 type="button"
                 data-bs-toggle="collapse"
                 :data-bs-target="'#' + menu.id"

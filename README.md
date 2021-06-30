@@ -2,7 +2,7 @@
 
 Barre de Navigation alimentée par un tableau d'objets pour VueJs
 
-## dependancies
+## Dependancies
 
 la barre utilise plusieurs dépendances : 
 ```
