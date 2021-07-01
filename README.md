@@ -1,6 +1,6 @@
 # Barre de navigation
 
-Barre de Navigation alimentée par un tableau d'objets pour VueJs
+Barre de Navigation alimentée par un tableau d'objets pour VueJs/Typescript
 
 ## Dependancies
 
