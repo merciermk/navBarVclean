@@ -104,45 +104,12 @@
 import { Component, Vue } from 'vue-property-decorator'
 import { Menu } from '@/components/interfaceMenu'
 
-const foo: Menu = {
-  name: 'FOO',
-  id: 'FOO',
-  icon: 'times',
-  dataBsParent: '#cmp-nav-left',
-  topElement: true,
-  childElement: true,
-  sousMenu: [
-    {
-      subName: 'Sous-Menu',
-      subIcon: 'times',
-      subPath: '/bar'
-    },
-    {
-      subName: 'Sous-menu',
-      subIcon: 'times',
-      subPath: '/foo'
-    }
-  ]
-}
-
-const bar: Menu = {
-  name: 'Menu 2',
-  id: 'menu2',
-  icon: 'times',
-  dataBsParent: '#cmp-nav-left',
-  bottomElement: true,
-  childElement: false,
-  path: '/bar2'
-}
-
 @Component({
   computed: {
   }
 })
 export default class SideBarLeft extends Vue {
   navElements: Menu[] = [
-    foo,
-    bar
   ]
 
   /* gestion de l'icone du toggle btn */

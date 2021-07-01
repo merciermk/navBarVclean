@@ -54,8 +54,6 @@ toggleBtnOpenIt = 'align-justify'; // icone de la version fermée
 toggleBtnCloseBtn = 'times'; // icone de la version ouverte
 ```
 
+#### A savoir
 
-
-
-
-
+- Dans le cas d'un affichage trop long, le menu devient scrollable.
