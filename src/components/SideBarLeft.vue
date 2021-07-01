@@ -102,7 +102,7 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
-import { Menu } from '@/components/interfaceMenu'
+import { Menu } from '@/utils/interfaceMenu'
 
 @Component({
   computed: {
