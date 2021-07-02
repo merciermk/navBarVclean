@@ -110,6 +110,12 @@ ul{
   width: $nav-extended;
   margin-top: auto;
   margin-bottom: 0px;
+  .collapsed > .accordion-state {
+    transform: rotate(-90deg);
+  }
+  .accordion-state {
+    transform: rotate(90deg);
+  }
 }
 
 /* **************** */
